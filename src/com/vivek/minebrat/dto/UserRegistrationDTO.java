@@ -1,5 +1,15 @@
 package com.vivek.minebrat.dto;
 
-public class UserRegistrationDTO {
+import lombok.*;
 
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserRegistrationDTO {
+    private String username;
+    private String password;
+    private String email;
+    private AddressDTO address;
 }
+
